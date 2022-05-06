@@ -1,0 +1,72 @@
+.bg-dar {
+    background-image: url('/static/images/devika.jpeg');
+    background-size: cover;
+
+}
+
+.btn-outline-secondary {
+    color: white;
+    border-color: white;
+}
+
+.text-white {
+    color: white;
+}
+
+.text {
+    display: inline-flex;
+    margin-left: 10px;
+    margin-right: 80px;
+}
+
+.wrap-contact3 {
+    width: 500px;
+
+    background: #16222A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 72px 55px 65px 55px;
+}
+
+.container-contact3 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
+
+.bg-contact3 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contact3-form-title {
+    display: block;
+    font-family: Poppins-Bold;
+    font-size: 39px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 70px;
+}
+
+.fm {
+    padding-bottom: 30px;
+}

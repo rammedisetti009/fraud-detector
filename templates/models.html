@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>models</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .bg-da {
+            background-image: url('/static/images/sirisha1.jpeg');
+            background-size: cover;
+        }
+
+        .btn-outline-secondary {
+            color: #000;
+            border-color: #000;
+        }
+        
+    </style>
+</head>
+<body class="text-white bg-da">
+    <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
+                <h4>Creditcard fraud detection</h4>
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li class="nav-link px-2 link-dark "><a href="{{ url_for('home') }}" class="nav-link text-white"
+                        aria-current="page">Home</a></li>
+                <li class="nav-link px-2 link-dark"><a href="{{ url_for('models') }}"
+                        class="nav-link text-white">Models</a></li>
+                <li class="nav-link px-2 link-dark"><a href="{{ url_for('documentation') }}"
+                        class="nav-link text-white">About</a>
+                </li>
+                <li class="nav-link px-2 link-dark"><a href="{{ url_for('contact') }}"
+                    class="nav-link text-white">contact</a>
+                </li>
+                <li class="nav-link px-2 link-dark"><a href="/logout"
+                    class="nav-link text-white">logout</a>
+                </li>
+            </ul>
+
+            
+        </header>
+
+
+        <div>
+            <h3>
+                Fraud Detection Models
+            </h3>
+        </div>
+       
+        <h5>1 Logistic regression</h5>
+        <p>It is a statistical model which uses a logistic function to classify the binary dependent variable.it
+            understands the relationship between the dependent variable and one or more independent variables by
+            estimating the probabilities using a logistic regression equation [12][13]. this type of model is useful in
+            predicting the chances of the choice being made.it is a supervised machine learning model.</p>
+        <h5>2 Isolation Forest</h5>
+        <p>Isolation forest tree machine learning algorithm is an anomaly detection method. It can work with either
+            supervised or unsupervised learning methods. For outlier detection, the isolation forest tree technique is
+            different from other types of distance or density-based methods, and the algorithm tried tree to build an
+            incredibly randomized decision tree for separating outliers and return the anomaly score of each sample
+            using the Isolation Forest algorithm.</p>
+        
+
+        <h5>3 Local Outlier Factor</h5>
+        <p>The LOF (Local outlier factor) approach is an unsupervised anomaly detection methodology that can be used to
+            detect the outlier. The local density deviation of a data point is calculated by comparing it to its
+            neighbors. Because of its lesser density than the rest of the neighborhood, it is considered an outlier.
+            Outliers are samples that have a density that is much lower than that of their neighbors. Local density is
+            determined by calculating distances between neighboring data points (K-nearest neighbors). As a result, each
+            data point's local density may be calculated.</p>
+        <h5>4 K-means clustering</h5>
+        <p>The basic purpose of the K-means algorithm is to lower the sum of distances between points and the cluster
+            centroid that corresponds to them. It allows us to cluster data into different groups and is a simple and
+            rapid technique for determining the categories of groups in an unlabeled dataset without any prior training.
+            A centroid-based algorithm is assigned to each cluster. The value of k should be known ahead of time in this
+            algorithm.</p>
+        <h5>5 Neural networks</h5>
+        <p>A neural network is a set of algorithms that recognizes hidden correlations in a set of data by simulating
+            how the human brain functions.[22] It is a mathematical model that is implemented neurally. To perform all
+            functions, it contains a large number of interconnected processing components known as neurons. A weighted
+            connection of neurons stores information in the neurons. The neural network approach is mostly used for
+            image classification and detection.</p>
+
+        
+
+
+
+    </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

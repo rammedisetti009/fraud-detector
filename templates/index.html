@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link href="static/indexstyle.css" rel="stylesheet">
+</head>
+
+
+
+<body class="text-white bg-dar">
+  <div>
+    <div>
+      <div class="container">
+
+
+
+        <div>
+          <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/home" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
+              <h4>Creditcard fraud detection</h4>
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+              <li class="nav-link px-2 link-dark "><a href="{{ url_for('home') }}" class="nav-link text-white"
+                  aria-current="page">Home</a></li>
+              <li class="nav-link px-2 link-dark"><a href="{{ url_for('models') }}"
+                  class="nav-link text-white">Models</a></li>
+              <li class="nav-link px-2 link-dark"><a href="{{ url_for('documentation') }}"
+                  class="nav-link text-white">About</a>
+              </li>
+              <li class="nav-link px-2 link-dark"><a href="{{ url_for('contact') }}"
+                  class="nav-link text-white">contact</a>
+              </li>
+              <li class="btn btn-outline nav-link px-2 link-dark"><a href="/logout"
+                class=" nav-link text-white">logout</a>
+            </li>
+            </ul>
+
+
+
+          </header>
+
+
+
+          <div>
+            <div class="heading">
+              <h3>
+                Detect fraud by uploading your file
+              </h3>
+            </div>
+
+
+            <div class="container">
+
+              <form action="/" method="post" enctype="multipart/form-data">
+                <h4>
+                  <label>select file</label>
+                </h4>
+
+                <div class="input-group">
+                  <input type="file" name="file" class="form-control" $input-padding-x:50px; id="inputGroupFile04"
+                    aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                </div><br>
+
+                <button type="submit" class="btn btn-outline-secondary">Upload <svg xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
+                  </svg></button>
+                <a class="link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Check for upload detailes
+                </a>
+
+
+
+                <div>
+                 
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalLabel">Upload Details</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-dark">
+                          1. The file should be in CSV format <br>
+                          2. The file should contain only 29 rows <br>
+                          3. The file should be PCA transformed <br>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+
+
+
+              </form>
+            </div><br><br>
+
+            <div class="nn">
+              <h2>
+                {{ prediction_text5 }}
+              </h2>
+            </div>
+
+            <div class="algo">
+              <div class="text">
+                <h4>
+                  {{ prediction_text1 }}
+                  <br><br>
+                  {{ prediction_text2 }}
+                  <br><br>
+
+                </h4>
+              </div>
+              <div class="text">
+                <h4>
+                  {{ prediction_text3 }}
+                  <br><br>
+                  {{ prediction_text4 }}
+                </h4>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+
+</html>
