@@ -1,0 +1,43 @@
+.bg-dar {
+    background-image: url('/static/images/bg.jpg');
+    background-size: cover;
+
+  }
+
+  .btn-outline-secondary {
+    color: white;
+    border-color: white;
+  }
+
+  .text-white {
+    color: white;
+  }
+
+  .text {
+    display: inline-flex;
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+
+  .nn {
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+  }
+
+  .algo {
+    text-align: center;
+  }
+
+  .heading {
+    padding-bottom: 50px;
+  }
+  .link{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+  }
+  .link:hover{
+    text-decoration: underline;
+    color: white;
+  }
